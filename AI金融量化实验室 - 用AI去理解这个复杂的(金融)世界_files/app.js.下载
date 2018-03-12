@@ -1,0 +1,45 @@
+/**
+ * Created by weijiabin on 2018-02-15.
+ */
+$(function () {
+
+     $('#btn_code').click(function(){
+            var mobile = $('#mobile').val();
+            console.log(mobile);
+
+            $.post('/member/sms',{mobile:mobile},function(data,status){
+              //返回值 ret 在这里是一个字典
+              console.log('status',data.status)
+               if(data.status == '1'){
+                  alert('发送验证码成功。')
+               }
+               else {
+                   alert('发送验证码失败：'+data.message)
+               }
+
+            })//post
+
+            })//click
+})//ready
+
+
+$(function () {
+
+     $('#btn_forgot_pwd_code').click(function(){
+            var mobile = $('#mobile').val();
+            console.log(mobile);
+
+            $.post('/member/sms',{mobile:mobile,'reg':'0'},function(data,status){
+              //返回值 ret 在这里是一个字典
+              console.log('status',data.status)
+               if(data.status == '1'){
+                  alert('发送验证码成功。')
+               }
+               else {
+                   alert('发送验证码失败：'+data.message)
+               }
+
+            })//post
+
+            })//click
+})//ready
