@@ -39,31 +39,9 @@
         </div>
     </div>
 
-    <div ng-view="" class="view-container ng-scope"><style type="text/css" class="ng-scope">
-        @media (min-width: 768px) {
-          .col-sm-2-5 {
-            width: 20.833%;
-          }
-      
-          .col-sm-9-5 {
-            width: 79.166%;
-          }
-      
-          .col-sm-2-5,
-          .col-sm-9-5 {
-            position: relative;
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px;
-            float: left;
-          }
-        }
-      
-      </style>
-      
+    <div ng-view="" class="view-container ng-scope"> 
       <div class="container ex-container ng-scope">
         <div class="row row-fixed">
-      
             <div class="col-xs-5 ep-left">
                 <div class="left-content">
                   <span class="span1">智能实验室 - 量化金融</span>&nbsp;<span class="span2"></span>
@@ -84,8 +62,8 @@
                     </div>
                   </div>
                   <div class="row tooltip-row">
-                    <!-- <div class="col-xs-12 col-sm-8">
-                    </div> -->
+                    <div class="col-xs-12 col-sm-8 tooltip-row">
+                    </div>
                   </div>
                   <!-- <div class="row form-group custom-group">
                     <div class="col-xs-12 col-sm-12">
@@ -108,16 +86,19 @@
                       <button class="btn custom-btn ng-binding" type="button" ng-click="getCode()" ng-disabled="countDown>0||registForm.phone.$invalid||!piccode" ng-bind="countDown > 0 ? '请等待(' + countDown + 's)' : '获取验证码'" disabled="disabled">获取验证码</button>
                     </div>
                   </div>
-                  <div class="row tooltip-row"></div>
+                  <div class="row tooltip-row">
+                    <div class="col-xs-12 col-sm-8 tooltip-row">
+                    </div>
+                  </div>
                   <div class="row form-group custom-group">
                       <div class="col-xs-12 col-sm-12" id="pic_code_box">
                         <input type="text" class="form-control custom-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" placeholder="请输入验证码" name="imgcode" ng-model="piccode" ng-required="true" required="required">                     
                       <img class="code" id="checkCode" src="/share/user/getPicVerify"></div>
                     </div>
-                    <div class="row tooltip-row">
-                      <!-- <div class="col-xs-12 col-sm-8">
-                      </div> -->
+                  <div class="row tooltip-row">
+                    <div class="col-xs-12 col-sm-8 tooltip-row">
                     </div>
+                  </div>
                   <!-- <div class="row form-group custom-group">
                     <div class="col-xs-12 col-sm-12">
                       <textarea class="form-control custom-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" name="addition" ng-model="registform.addition" placeholder="描述具体需求可以提高申请成功率" ng-required="true" required="required"></textarea>
@@ -177,11 +158,6 @@
     <script type="text/javascript" src="./AI金融量化实验室 - 用AI去理解这个复杂的(金融)世界_files/jquery-3.1.1.min.js.下载"></script>
     <script type="text/javascript" src="./AI金融量化实验室 - 用AI去理解这个复杂的(金融)世界_files/amazeui.min.js.下载"></script>
     <script type="text/javascript" src="./AI金融量化实验室 - 用AI去理解这个复杂的(金融)世界_files/app.js.下载"></script>
-
-
-
-
-
 </body>
 
 </html>
