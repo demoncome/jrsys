@@ -18,7 +18,8 @@ a {
     color: #888;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0rem;
 }
 
@@ -47,30 +48,11 @@ ol, ul {
     margin: 50px auto;
 }
 
-
-/* @media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 1170px;
-    }
-} */
-
 .am-container {
-    padding-left: 0rem;
-    padding-right: 0rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1170px;
 }
 
 .container {
@@ -946,12 +928,22 @@ button.dg-btn {
 
 /* ****** 列表页 ****** */
 
-.list-bg-color{
-    background:#f1f1f1;
+.list-bg-color {
+    background: #f2f2f2;
+}
+
+.art-list {
+    padding: 0 10px;
+    background-color: #fff;
 }
 
 .art-list-box {
     padding: 20px 50px;
+}
+
+.art-content-box {
+    padding: 20px 50px 20px 0;
+    text-align: left;
 }
 
 .ai-list {
@@ -963,7 +955,7 @@ button.dg-btn {
     position: relative;
     display: block;
     margin-bottom: -1px;
-    background-color: #f1f1f1;
+    background-color: #f2f2f2;
     border-bottom: 1px solid #dedede;
     border-width: 1px 0;
 }
@@ -972,9 +964,9 @@ button.dg-btn {
     position: relative;
     display: block;
     margin-bottom: -1px;
-    background-color: #f1f1f1;
+    background-color: #fff;
     border-width: 1px 0;
-    margin:0;
+    margin: 0;
 }
 
 .am-list-item-desced {
@@ -982,20 +974,27 @@ button.dg-btn {
     padding-bottom: 2rem;
 }
 
-.ai-list-item-hd{
-    color:#333;
-    font-size:2.2rem;
+.ai-list-item-hd {
+    color: #2b3747;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
-.am-list-item-hd:hover{
-    color:#5c6c82;
+.am-list-item-hd:hover {
+    color: #5c6c82;
 }
 
-.ai-list-item-text{
-    color:#999;
-    font-size:1.2rem;
-    margin-top:3rem;
+.ai-list-news-hd {
+    padding-top: .3rem;
+    padding-bottom: 0rem;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.ai-list-item-text {
+    color: #5c6c82;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 3rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1005,46 +1004,120 @@ button.dg-btn {
     max-height: 12em;
 }
 
-.ai-list-item-more{
+.ai-list-item-more {
     font-size: 1.2rem;
-    margin:20px 0;
-    color:#888;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #5c6c82;
     cursor: pointer;
 }
 
-.hdb{
+.hdb {
     padding-bottom: 10px;
     border-bottom: 1px solid #dbdbdb;
 }
 
-.hdb span{
+.hdb span {
     font-size: 1rem;
     margin-right: 15px;
-    color: #acacac;
+    color: #7f8c8d;
 }
 
-.art-list{
-    padding-top:1.5rem;
+.art-list {
+    padding-top: 1.5rem;
 }
 
-.right-title{
+.right-title {
     font-size: 1.8rem;
     font-weight: bold;
     color: #5c6c82;
 }
 
-.ai-g{
-    padding:10px 0;
-    border-bottom: 1px solid #ddd;
+.ai-g {
+    padding: 10px 0;
+    border-bottom: 1px solid #dbdbdb;
 }
 
-.ai-list-news-bd{
-    width:100%;
+.ai-list-news-bd {
+    width: 100%;
+    padding-bottom: 20px;
 }
 
-.ai-list-right-hd{
+.ai-list-right-hd {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.6rem !important;
     color: #7f8c8d;
+}
+
+
+/* *****文章详情页****** */
+
+.art-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2b3747;
+}
+
+.content-box {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6rem !important;
+    color: #555;
+    text-align: justify;
+}
+
+.board {
+    padding-top: 100px;
+}
+
+.pagination-art {
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.ai-pagination {
+    position: relative;
+    padding-left: 0;
+    margin: 1.5rem 0;
+    list-style: none;
+    color: #999;
+    text-align: left;
+}
+
+.ai-pagination li {
+    display: inline-block;
+}
+
+.ai-pagination-select {
+    font-size: 1.6rem;
+}
+
+.am-pagination-prev {
+    float: left;
+}
+
+.am-pagination-next {
+    float: right;
+}
+
+.ai-pag {
+    padding: 10px 15px;
+    border: 1px solid #acacac;
+}
+
+.ai-pag:hover {
+    padding: 10px 15px;
+    border: 1px solid #0e90d2;
+}
+
+.ai-form-group {
+    margin-bottom: .5rem;
+}
+
+.ai-form-group input {
+    padding: .8rem !important;
+    font-size: 1.2rem !important;
 }
