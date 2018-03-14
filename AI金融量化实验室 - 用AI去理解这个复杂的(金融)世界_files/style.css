@@ -14,6 +14,14 @@
 
 /*公共样式*/
 
+a {
+    color: #888;
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+
 .disf {
     display: flex;
 }
@@ -275,9 +283,7 @@
 li {
     color: hsla(0, 0%, 100%, .6);
     font-size: 14px;
-    line-height: 32px;
     padding: 0;
-    font-weight: 600;
 }
 
 .link-list {
@@ -418,7 +424,7 @@ li {
 }
 
 .col-xs-7 {
-    width: 58.33333333%;
+    width: 75%;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -940,11 +946,105 @@ button.dg-btn {
 
 /* ****** 列表页 ****** */
 
+.list-bg-color{
+    background:#f1f1f1;
+}
+
 .art-list-box {
     padding: 20px 50px;
 }
 
-.am-list-news-default .am-list .am-list-item-desced {
-    /* padding-top: 1rem; */
-    padding-bottom: 1rem;
+.ai-list {
+    margin-bottom: 2rem;
+    padding-left: 0;
+}
+
+.ai-list li {
+    position: relative;
+    display: block;
+    margin-bottom: -1px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #dedede;
+    border-width: 1px 0;
+}
+
+.ai-right-list li {
+    position: relative;
+    display: block;
+    margin-bottom: -1px;
+    background-color: #f1f1f1;
+    border-width: 1px 0;
+    margin:0;
+}
+
+.am-list-item-desced {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.ai-list-item-hd{
+    color:#333;
+    font-size:2.2rem;
+    font-weight: bold;
+}
+
+.am-list-item-hd:hover{
+    color:#5c6c82;
+}
+
+.ai-list-item-text{
+    color:#999;
+    font-size:1.2rem;
+    margin-top:3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.8em;
+    -webkit-line-clamp: 5;
+    max-height: 12em;
+}
+
+.ai-list-item-more{
+    font-size: 1.2rem;
+    margin:20px 0;
+    color:#888;
+    cursor: pointer;
+}
+
+.hdb{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.hdb span{
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #acacac;
+}
+
+.art-list{
+    padding-top:1.5rem;
+}
+
+.right-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5c6c82;
+}
+
+.ai-g{
+    padding:10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.ai-list-news-bd{
+    width:100%;
+}
+
+.ai-list-right-hd{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6rem !important;
+    color: #7f8c8d;
 }
